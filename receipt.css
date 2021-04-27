@@ -1,0 +1,34 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #313435;
+    height: 100%;
+}
+
+.container-sm{
+    height: 100%;
+}
+
+.header{
+    position: relative;
+    top: 15px;
+}
+
+.input-area{
+    resize: none;
+    font-size: 125%;
+    border-color: #999;
+    background-color: #eee;
+    color: #111;
+    max-width: 80%;
+    display: inline-block;
+}
+
+.char-counter{
+    font-size: 125%;
+    color: white;
+}
+
+.submit{
+    font-size: 75%;
+}

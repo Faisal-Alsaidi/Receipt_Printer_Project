@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<title>Send Me A Message!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="receipt.css">
+	<script src="receipt.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script data-ad-client="ca-pub-3415835458792614" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="container-sm">
+		<div class="jumbotron text-center header">
+			<h1>Send Me A Message!</h1>
+			<p>Anything you enter will be sent to a receipt printer in my room, go wild.</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<form action="receive-text.php" method="post" name="send-message" class="needs-validation" novalidate>
+					<textarea class="form-control input-area" id="input-area" name="message" rows="10" cols="50" maxlength="500" placeholder="Message" autofocus required></textarea>
+					<div class="invalid-feedback">Please fill out this field.</div>
+					<br>
+					<button class="btn btn-outline-primary submit text-center" type="submit" value="sendMessage">Submit</button>
+				</form>
+				<div class="char-counter" id="char-counter">Characters Left: 500</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
